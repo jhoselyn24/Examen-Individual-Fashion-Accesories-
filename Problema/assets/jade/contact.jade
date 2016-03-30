@@ -1,0 +1,16 @@
+doctype
+html
+	head
+		include ../jade/base/_head
+	body
+		include ../jade/base/_header
+		.hero-image
+			.carousel.slide(id="myCarousel" data-ride="carousel")
+				.ol.carousel-indicators
+					li(data-target="#myCarousel" data-slide-to="0" class="active")
+					li(data-target="#myCarousel" data-slide-to="1")
+				.carousel-inner(role="listbox")
+					.item.active
+						img(src="assets/images/slider1.jpg" alt="foto-cartera")
+					.item
+						img(src="assets/images/slider2.jpg" alt="foto-modelo")

@@ -1,0 +1,145 @@
+doctype
+html
+	head
+		include ../jade/base/_head
+	body
+		include ../jade/base/_header
+		.hero-image
+			.carousel.slide(id="myCarousel" data-ride="carousel")
+				.ol.carousel-indicators
+					li(data-target="#myCarousel" data-slide-to="0" class="active")
+					li(data-target="#myCarousel" data-slide-to="1")
+				.carousel-inner(role="listbox")
+					.item.active
+						img(src="assets/images/slider1.jpg" alt="foto-cartera")
+					.item
+						img(src="assets/images/slider2.jpg" alt="foto-modelo")
+		.marcas
+			.container
+				.row
+					.col-md-5
+						.box-collection
+							img(src="assets/images/banner1.jpg")
+					.col-md-7
+						.box-new
+							img(src="assets/images/banner2.jpg")
+		.galeria
+			.container.text-center
+				ul
+					li: a(href="#") LASTEST
+					li: a(href="#") BESTSELLER
+					li: a(href="#") SALE
+				.row
+					.col-md-3
+						.box-media
+							img(src="assets/images/a1.jpg")
+							+delivery
+							p $218.00
+					.col-md-3
+						.box-media
+							img(src="assets/images/b1.jpg")
+							+delivery
+							+precio
+					.col-md-3
+						.box-media
+							img(src="assets/images/c1.jpg")
+							+delivery
+							+precio
+					.col-md-3
+						.box-media
+							img(src="assets/images/d1.jpg")
+							+delivery
+							p $218.00
+		.clientes
+			.container
+				.row
+					.col-md-2
+						.box-cliente
+							img(src="assets/images/client1.jpg")
+					.col-md-2
+						.box-cliente
+							img(src="assets/images/client2.jpg")
+					.col-md-2
+						.box-cliente
+							img(src="assets/images/client3.jpg")
+					.col-md-2
+						.box-cliente
+							img(src="assets/images/client4.jpg")
+					.col-md-2
+						.box-cliente
+							img(src="assets/images/client5.jpg")
+					.col-md-2
+						.box-cliente
+							img(src="assets/images/client6.jpg")
+		.galeria2
+			.container
+				ul
+					li: a(href="#") CLOTHING
+					li: a(href="#") EQUIPMENTS
+					li: a(href="#") JEWELLERY
+				.row
+					.col-md-4
+						.box-compra
+							img(src="assets/images/a2.jpg")
+							+compra
+					.col-md-4
+						.box-compra
+							img(src="assets/images/d2.jpg")
+							+compra
+					.col-md-4
+						.box-compra
+							img(src="assets/images/g2.jpg")
+							+compra
+				.row
+					.col-md-4
+						.box-compra
+							img(src="assets/images/c2.jpg")
+							+compra
+					.col-md-4
+						.box-compra
+							img(src="assets/images/c2.jpg")
+							+compra
+					.col-md-4
+						.box-compra
+							img(src="assets/images/e2.jpg")
+							+compra
+		.blog
+			.container
+				ul
+					li: a(href="#") BLOG
+				.row
+					.col-md-4
+						.blog-img
+							img(src="assets/images/blog2.jpg")
+							+text-blog
+					.col-md-4
+						.blog-img
+							img(src="assets/images/blog1.jpg")
+							+text-blog
+					.col-md-4
+						.blog-img
+							img(src="assets/images/blog3.jpg")
+							+text-blog
+		.ofertas
+			.container
+				.row
+					.col-md-4
+						.box-oferta
+							i.fa.fa-phone-square
+							h2 ORDER ONLINE NOW
+							span Call Us:(0123) 456 789
+					.col-md-4
+						.box-oferta
+							i.fa.fa-phone-square
+							h2 FREE WORLDWIDE SHIPPING
+							span On order Over $100
+					.col-md-4
+						.box-oferta
+							i.fa.fa-phone-square
+							h2 30 DAYS MONEY BACK 100%
+							span Satisfaction Guarantee
+		include ../jade/base/_footer
+
+		script(src="assets/js/jquery.js")
+		script(src="assets/js/bootstrap.css")
+		script(src="assets/js/bootstrap.min.js")
